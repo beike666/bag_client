@@ -1,0 +1,32 @@
+/*全局css样式*/
+html, body, #app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 1215px;
+}
+.el-breadcrumb{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.el-alert__title{
+    font-size: 15px !important;
+}
+.el-table{
+    font-size: 12px;
+}
+.el-pagination{
+    margin-top: 15px;
+}
+.el-table th.gutter {
+    display: table-cell !important;
+}
+.el-cascader-menu {
+    height: 300px;
+}
+.el-steps{
+    margin-top: 10px;
+}
+.el-step__title{
+    font-size: 10px;
+}
