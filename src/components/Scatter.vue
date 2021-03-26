@@ -144,8 +144,12 @@
             return this.$message.warning("请先完善请求数据");
           }
           this.$http.post("get/scatter/data",this.queryForm).then(res=>{
-            if(res.data.status!=200){
-              return this.$message.error("获取失败");
+            if(res.data.status==201){
+              return this.$message.warning("暂无数据");
+            }
+            if(res.data.status==202){
+              this.scatterData=[];
+              return this.$message.error("抱歉，您的选择数据非法，请认真阅读页头警告！");
             }
             this.$message.success("获取成功");
             res.data.data.forEach(item=>{

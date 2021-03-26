@@ -6,6 +6,7 @@
                 <img src="../assets/image/logo.jpg" alt="">
                 <span>软件工程个人项目-D{0-1}背包问题</span>
             </div>
+            <el-button>常龙龙</el-button>
         </el-header>
         <el-container>
             <!--            左侧导航-->
