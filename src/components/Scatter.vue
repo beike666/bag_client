@@ -149,6 +149,7 @@
             }
             if(res.data.status==202){
               this.scatterData=[];
+              this.initScatter();
               return this.$message.error("抱歉，您的选择数据非法，请认真阅读页头警告！");
             }
             this.$message.success("获取成功");
