@@ -143,6 +143,7 @@
           if(!valid){
             return this.$message.warning("请先完善请求数据");
           }
+          this.scatterData=[];
           this.$http.post("get/scatter/data",this.queryForm).then(res=>{
             if(res.data.status==201){
               return this.$message.warning("暂无数据");
