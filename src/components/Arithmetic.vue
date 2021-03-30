@@ -174,7 +174,7 @@
       }
     },
     methods:{
-      // 请求排序数据
+      // 请求数据
       queryData(){
         this.$refs.queryFormRef.validate(valid=>{
           if(!valid){
