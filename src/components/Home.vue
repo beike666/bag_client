@@ -21,6 +21,10 @@
                         active-text-color="#ffd04b"
                         :unique-opened="true"
                         router>
+                    <el-menu-item index="database" @click="saveActivePath('database')">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">数据库存储</span>
+                    </el-menu-item>
                     <el-menu-item index="scatter" @click="saveActivePath('scatter')">
                         <i class="el-icon-s-home"></i>
                         <span slot="title">一、数据散点图</span>

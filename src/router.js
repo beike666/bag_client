@@ -5,6 +5,7 @@ import Scatter from "./components/Scatter";
 import Order from "./components/Order";
 import Arithmetic from "./components/Arithmetic";
 import Save from "./components/Save";
+import DataBase from "./components/DataBase";
 
 Vue.use(Router)
 
@@ -15,6 +16,10 @@ export default new Router({
       name: 'home',
       component: Home,
       children:[
+        {
+          path:'/database',
+          component:DataBase
+        },
         {
           path:'/scatter',
           component:Scatter

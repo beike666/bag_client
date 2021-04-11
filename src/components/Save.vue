@@ -81,7 +81,7 @@
     name: "Save",
     data(){
       return{
-        requirement:"任务要求：用户能够自主选择动态规划算法、回溯算法求解指定D{0-1} KP数据的最优解和求解时间（以秒为单位）",
+        requirement:"任务要求：任意一组D{0-1} KP数据的最优解、求解时间和解向量可保存为txt文件或导出EXCEL文件",
         warning:'第二、三、四个文件只有10组项集，请勿选择第11组',
         queryForm:{
           // 哪个文件

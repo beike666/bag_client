@@ -170,14 +170,15 @@
           }
           this.$http.post("order",this.queryForm).then(res=>{
             if(res.data.status==201){
-              return this.$message.warning("暂无数据");
+              return this.$message.warning("数据库为空，请先存储数据");
             }
             if(res.data.status==202){
               this.orderData=[]
               return this.$message.error("抱歉，您的选择数据非法，请认真阅读页头警告！");
             }
-
-            console.log(res.data.data)
+            if(res.data.status==203){
+              return this.$message.warning("暂无数据");
+            }
             this.orderData=res.data.data;
             this.$message.success("获取成功");
           })

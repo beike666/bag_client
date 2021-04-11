@@ -182,14 +182,16 @@
           }
           this.$http.post("get/answer",this.queryForm).then(res=>{
             if(res.data.status==201){
-              return this.$message.warning("暂无数据");
+              return this.$message.warning("数据库为空，请先存储数据");
               this.isVisible=false;
             }
             if(res.data.status==202){
               this.isVisible=false;
               return this.$message.error("抱歉，您的选择数据非法，请认真阅读页头警告！");
             }
-            console.log(res.data)
+            if(res.data.status==203){
+              return this.$message.warning("暂无数据");
+            }
             this.answer=res.data.answer;
             this.runtime=res.data.runtime/1000.0;
             this.isVisible=true;
