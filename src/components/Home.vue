@@ -6,7 +6,11 @@
                 <img src="../assets/image/logo.jpg" alt="">
                 <span>软件工程个人项目-D{0-1}背包问题</span>
             </div>
-            <el-button>常龙龙</el-button>
+            <div>
+                <el-button>常龙龙</el-button>
+                <el-button>刘佳华</el-button>
+            </div>
+
         </el-header>
         <el-container>
             <!--            左侧导航-->
@@ -22,24 +26,28 @@
                         :unique-opened="true"
                         router>
                     <el-menu-item index="database" @click="saveActivePath('database')">
-                        <i class="el-icon-s-home"></i>
-                        <span slot="title">数据库存储</span>
+                        <i class="el-icon-postcard"></i>
+                        <span slot="title">一、数据库存储</span>
                     </el-menu-item>
                     <el-menu-item index="scatter" @click="saveActivePath('scatter')">
                         <i class="el-icon-s-home"></i>
-                        <span slot="title">一、数据散点图</span>
+                        <span slot="title">二、数据散点图</span>
                     </el-menu-item>
                     <el-menu-item index="order" @click="saveActivePath('order')">
                         <i class="el-icon-s-custom"></i>
-                        <span slot="title">二、数据排序</span>
+                        <span slot="title">三、数据排序</span>
                     </el-menu-item>
                     <el-menu-item index="arithmetic" @click="saveActivePath('arithmetic')">
                         <i class="el-icon-data-line"></i>
-                        <span slot="title">三、算法求解</span>
+                        <span slot="title">四、算法求解</span>
                     </el-menu-item>
                     <el-menu-item index="save" @click="saveActivePath('save')">
-                        <i class="el-icon-data-line"></i>
-                        <span slot="title">四、结果文件存储</span>
+                        <i class="el-icon-mobile"></i>
+                        <span slot="title">五、结果文件存储</span>
+                    </el-menu-item>
+                    <el-menu-item index="test" @click="saveActivePath('test')">
+                        <i class="el-icon-position"></i>
+                        <span slot="title">六、代码测试</span>
                     </el-menu-item>
 
                 </el-menu>

@@ -6,6 +6,7 @@ import Order from "./components/Order";
 import Arithmetic from "./components/Arithmetic";
 import Save from "./components/Save";
 import DataBase from "./components/DataBase";
+import CodeTest from "./components/CodeTest";
 
 Vue.use(Router)
 
@@ -36,6 +37,10 @@ export default new Router({
           path:'/save',
           component:Save
         },
+        {
+          path:'/test',
+          component:CodeTest
+        }
       ]
     }
   ]
