@@ -4,7 +4,7 @@
         <el-header>
             <div>
                 <img src="../assets/image/logo.jpg" alt="">
-                <span>软件工程个人项目-D{0-1}背包问题</span>
+                <span>D{0-1}KP 实例数据集算法实验平台</span>
             </div>
             <div>
                 <el-button>常龙龙</el-button>
@@ -30,15 +30,15 @@
                         <span slot="title">一、数据库存储</span>
                     </el-menu-item>
                     <el-menu-item index="scatter" @click="saveActivePath('scatter')">
-                        <i class="el-icon-s-home"></i>
+                        <i class="el-icon-data-line"></i>
                         <span slot="title">二、数据散点图</span>
                     </el-menu-item>
                     <el-menu-item index="order" @click="saveActivePath('order')">
-                        <i class="el-icon-s-custom"></i>
+                        <i class="el-icon-d-caret"></i>
                         <span slot="title">三、数据排序</span>
                     </el-menu-item>
                     <el-menu-item index="arithmetic" @click="saveActivePath('arithmetic')">
-                        <i class="el-icon-data-line"></i>
+                        <i class="el-icon-s-claim"></i>
                         <span slot="title">四、算法求解</span>
                     </el-menu-item>
                     <el-menu-item index="save" @click="saveActivePath('save')">
@@ -46,8 +46,12 @@
                         <span slot="title">五、结果文件存储</span>
                     </el-menu-item>
                     <el-menu-item index="test" @click="saveActivePath('test')">
-                        <i class="el-icon-position"></i>
+                        <i class="el-icon-upload"></i>
                         <span slot="title">六、代码测试</span>
+                    </el-menu-item>
+                    <el-menu-item index="inheritance" @click="saveActivePath('inheritance')">
+                        <i class="el-icon-download"></i>
+                        <span slot="title">七、遗传算法</span>
                     </el-menu-item>
 
                 </el-menu>
@@ -62,6 +66,10 @@
 </template>
 
 <script>
+
+  import 'bootstrap/dist/css/bootstrap.min.css'
+  import 'bootstrap/dist/js/bootstrap.min.js'
+
   export default {
     name: 'Home',
     data(){

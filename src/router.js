@@ -7,6 +7,7 @@ import Arithmetic from "./components/Arithmetic";
 import Save from "./components/Save";
 import DataBase from "./components/DataBase";
 import CodeTest from "./components/CodeTest";
+import Inheritance from "./components/Inheritance "
 
 Vue.use(Router)
 
@@ -40,6 +41,10 @@ export default new Router({
         {
           path:'/test',
           component:CodeTest
+        },
+        {
+          path:'/inheritance',
+          component:Inheritance
         }
       ]
     }

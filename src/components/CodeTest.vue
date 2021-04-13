@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="contain">
 <!--        任务要求-->
         <el-alert
                 :title="requirement"
@@ -98,7 +98,7 @@
         </el-card>
 <!--        示例代码区域-->
         <el-drawer
-                title="示例代码"
+                title="示例代码(动态规划算法)"
                 :visible.sync="drawer"
                 :direction="direction"
                 :before-close="handleClose">

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="contain">
         <!--        任务要求-->
         <el-alert
                 :title="requirement"

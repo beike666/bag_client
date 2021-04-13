@@ -5,7 +5,11 @@ import router from './router'
 import './assets/css/global.css'
 // 导入axios
 import axios from 'axios'
-
+// 导入bootstrap
+import 'bootstrap'
+// 引入jquery
+import $ from 'jquery'
+// 导入element-ui
 import './plugins/element.js'
 
 Vue.prototype.$http = axios ;

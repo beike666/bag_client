@@ -1,5 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
-    <div class="container">
+    <div class="contain">
         <!--        任务要求-->
         <el-alert
                 :title="requirement"
