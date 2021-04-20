@@ -8,6 +8,8 @@ import Save from "./components/Save";
 import DataBase from "./components/DataBase";
 import CodeTest from "./components/CodeTest";
 import Inheritance from "./components/Inheritance "
+import FileData from "./components/FileData";
+import Volume from "./components/Volume";
 
 Vue.use(Router)
 
@@ -45,6 +47,14 @@ export default new Router({
         {
           path:'/inheritance',
           component:Inheritance
+        },
+        {
+          path:'/fileData',
+          component:FileData
+        },
+        {
+          path:'/volume',
+          component:Volume
         }
       ]
     }

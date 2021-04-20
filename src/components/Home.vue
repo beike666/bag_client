@@ -29,29 +29,43 @@
                         <i class="el-icon-postcard"></i>
                         <span slot="title">一、数据库存储</span>
                     </el-menu-item>
+                    <el-submenu index="award">
+                        <template slot="title">
+                            <i class="el-icon-trophy"></i>
+                            <span>二、数据库管理</span>
+                        </template>
+                        <el-menu-item index="fileData" @click="saveActivePath('fileData')">
+                            <i class="el-icon-s-custom"></i>
+                            <span slot="title">file_data表</span>
+                        </el-menu-item>
+                        <el-menu-item index="volume" @click="saveActivePath('volume')">
+                            <i class="el-icon-s-custom"></i>
+                            <span slot="title">volume表</span>
+                        </el-menu-item>
+                    </el-submenu>
                     <el-menu-item index="scatter" @click="saveActivePath('scatter')">
                         <i class="el-icon-data-line"></i>
-                        <span slot="title">二、数据散点图</span>
+                        <span slot="title">三、数据散点图</span>
                     </el-menu-item>
                     <el-menu-item index="order" @click="saveActivePath('order')">
                         <i class="el-icon-d-caret"></i>
-                        <span slot="title">三、数据排序</span>
+                        <span slot="title">四、数据排序</span>
                     </el-menu-item>
                     <el-menu-item index="arithmetic" @click="saveActivePath('arithmetic')">
                         <i class="el-icon-s-claim"></i>
-                        <span slot="title">四、算法求解</span>
+                        <span slot="title">五、算法求解</span>
                     </el-menu-item>
                     <el-menu-item index="save" @click="saveActivePath('save')">
                         <i class="el-icon-mobile"></i>
-                        <span slot="title">五、结果文件存储</span>
+                        <span slot="title">六、结果文件存储</span>
                     </el-menu-item>
                     <el-menu-item index="test" @click="saveActivePath('test')">
                         <i class="el-icon-upload"></i>
-                        <span slot="title">六、代码测试</span>
+                        <span slot="title">七、代码测试</span>
                     </el-menu-item>
                     <el-menu-item index="inheritance" @click="saveActivePath('inheritance')">
                         <i class="el-icon-download"></i>
-                        <span slot="title">七、遗传算法</span>
+                        <span slot="title">八、遗传算法</span>
                     </el-menu-item>
 
                 </el-menu>
